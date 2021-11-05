@@ -1,0 +1,34 @@
+/*Ofertas*/
+.card-ofertas{
+    margin:40px;
+}
+
+.img-ofertas{
+    width: 200px;
+    height: 180px;
+}
+
+/*Venha nos conhecer*/
+
+
+/*Carrosel de imagens*/
+
+.carrosel-ofertas{
+    width: 50%;
+    height: 500px;
+    margin-top: 90px;
+    margin-left: 50px;
+}
+
+.img-carrosel{
+    height: 400px;
+}
+
+.img-carrosel-ofertas{
+    box-shadow: grey 0.2em 0.2em 0.5em;
+}
+
+.img-carrosel-ofertas:hover{
+    box-shadow: grey 0.35em 0.35em 0.6em;
+}
+

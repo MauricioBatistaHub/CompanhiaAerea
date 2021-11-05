@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/Passos.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>AeroMauro</title>
+</head>
+
+<body>
+
+    <!--Nav-->
+
+    <!-- CSS only -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/Index.html">AeroMauro</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNavDarkDropdown" aria-controls="navbarNavDarkDropdown" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Informações
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Informações sobre voos</a></li>
+                            <li><a class="dropdown-item" href="#">Documentos para viajar</a></li>
+                            <li><a class="dropdown-item" href="#">Dicas de saude</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Agende sua viagem
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="/AgendeSuaViagem/Ofertas.html">Ofertas</a></li>
+                            <li><a class="dropdown-item" href="#">Pacotes de viagens</a></li>
+                            <li><a class="dropdown-item" href="#">Agende Sua Viagem</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Sobre
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Nossa HIstória</a></li>
+                            <li><a class="dropdown-item" href="#">Começo de tudo</a></li>
+                            <li><a class="dropdown-item" href="#">Donos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Corpo do site -->
+
+    <select class="form-select form-passos-size" aria-label="Default select example">
+        <option selected>Selecione com quem irá voar</option>
+        <option value="1">AeroMauro</option>
+    </select>
+
+    <div class="radio-size">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+            <label class="form-check-label" for="flexRadioDefault1">
+                Classe Econômica
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+            <label class="form-check-label" for="flexRadioDefault2">
+                Classe Executiva
+            </label>
+        </div>
+    </div>
+
+    <select id="DataDovoo" class="form-select form-passos-size" aria-label="Default select example">
+        <option selected>Selecione data do voo</option>
+        <option value="1">06/11/2021</option>
+        <option value="2">07/11/2021</option>
+        <option value="3">08/11/2021</option>
+        <option value="4">09/11/2021</option>
+        <option value="5">10/11/2021</option>
+        <option value="6">11/11/2021</option>
+        <option value="7">12/11/2021</option>
+    </select>
+
+    <button type="button" onclick="Comprar()" id="btnCriarConta"
+        class="btn btn-dark button-comprar btn-completar">Completar
+        Compra</button>
+
+    <script>
+
+        var OneClick = true;
+        function Comprar() {
+            if (OneClick == true) {
+                alert('Sua compra foi concluida com sucesso!!');
+                OneClick = false;
+            }
+        }
+        
+    </script>
+
+</body>
+
+</html>
+
+<!-- alert(
+    "Sua compra foi executada com sucesso!!"
+) -->
